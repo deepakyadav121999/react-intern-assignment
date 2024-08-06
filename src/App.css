@@ -20,7 +20,7 @@
 }
 .ip_drop{
     border: none;
-    width: 250px;
+    width: 20px;
     /* margin-top: 5px;
     margin-bottom: 5px; */
     padding: 10px;
@@ -47,8 +47,16 @@ button{
    
 }
 p{
-    color: rgb(26, 23, 23);
-    font-weight: 600;
+    color: rgb(61, 61, 61);
+   
 
     font-family: sans-serif;
+}
+.inside_flex{
+    display: flex; 
+    gap: 2px;
+    align-items: center;
+}
+.color{
+    color: red;
 }

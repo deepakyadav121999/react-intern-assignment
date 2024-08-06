@@ -20,12 +20,15 @@ const ChildComponent = ({dropdowndata, btnName}) => {
         <div  className = {` ${hide} brd`}>
         <p>Refine by   <span onClick={()=>{
 
-        }}>Clear</span></p>
+        }} className='color'> Clear X </span></p>
             {
                 dropdowndata && dropdowndata.map((item)=>{
                    return <div className='flex'>
-                   
-       <input type= {item.type}  placeholder={item.task} className='ip_drop' /> 
+                   <div className='inside_flex'>
+                    <p>{item.task}</p>
+                   <input type= {item.type}   className='ip_drop'  placeholder='>'/> 
+                   </div>
+             
                    </div>
                    
                 })
